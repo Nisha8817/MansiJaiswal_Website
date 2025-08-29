@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-purple-700">Portfolio</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition-colors">About</a>
+                    <a href="#education" class="text-gray-700 hover:text-purple-600 transition-colors">Education</a>
+                    <a href="#skills" class="text-gray-700 hover:text-purple-600 transition-colors">Skills</a>
+                    <a href="#projects" class="text-gray-700 hover:text-purple-600 transition-colors">Projects</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-purple-600">Home</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-purple-600">About</a>
+            <a href="#education" class="block py-2 text-gray-700 hover:text-purple-600">Education</a>
+            <a href="#skills" class="block py-2 text-gray-700 hover:text-purple-600">Skills</a>
+            <a href="#projects" class="block py-2 text-gray-700 hover:text-purple-600">Projects</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-purple-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                        Hi, I'm <span class="text-yellow-300">Mansi Jaiswal</span>
+                    </h1>
+                    <div class="typewriter text-xl md:text-2xl text-white mb-8">
+                        Computer Science Graduate & Software Developer
+                    </div>
+                    <p class="text-gray-100 text-lg mb-8">
+                        Passionate about creating innovative solutions through code. 
+                        Recently completed MSc in Computer Science with expertise in 
+                        modern web technologies and software development.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="bg-white text-purple-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                            View Projects
+                        </a>
+                        <a href="tel:+91 99077 01559" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-700 transition-colors">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-white opacity-20 rounded-full animate-pulse"></div>
+                        <img src="\mansi1.jpg" alt="Professional portrait of a computer science graduate smiling confidently in a modern office environment" class="rounded-2xl shadow-2xl w-full max-w-md" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjNjY3ZWVhIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5Qb3J0cmFpdCBJbWFnZTwvdGV4dD48L3N2Zz4='">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fd9d2c00-0b9e-4058-816c-fe2c3d55458b.png" alt="Developer working on laptop in a modern coffee shop with coding interface visible on screen" class="rounded-2xl shadow-xl w-full" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSI gaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzM3NDE1MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkFib3V0IE1lIEltYWdlPC90ZXh0Pjwvc3ZnPg=='">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">My Journey in Computer Science</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        I'm a passionate computer science professional with a strong academic background, 
+                        having completed my Master's degree in Computer Science. My journey began with 
+                        a fascination for technology that led me to pursue formal education in this field.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Throughout my academic career, I've developed expertise in various programming 
+                        languages, software development methodologies, and cutting-edge technologies. 
+                        I enjoy solving complex problems and creating efficient, scalable solutions.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-code text-purple-600 text-xl"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">Clean Code</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-lightbulb text-purple-600 text-xl"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">Innovation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-users text-purple-600 text-xl"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">Teamwork</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-rocket text-purple-600 text-xl"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">Fast Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">Education</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- MSc -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">MSc Computer Science</h3>
+                    <p class="text-gray-600 mb-4">2023 - 2025</p>
+                    <p class="text-gray-600">Specialized in advanced algorithms, machine learning, and software engineering principles.</p>
+                </div>
+
+                <!-- BSc -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">BSc Computer Science</h3>
+                    <p class="text-gray-600 mb-4">2020 - 2023</p>
+                    <p class="text-gray-600">Comprehensive study of computer fundamentals, programming languages, and system design.</p>
+                </div>
+
+                <!-- 12th -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-book text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">12th Grade</h3>
+                    <p class="text-gray-600 mb-4">2019 - 2020</p>
+                    <p class="text-gray-600">Science stream with focus on mathematics and computer science fundamentals.</p>
+                </div>
+
+                <!-- 10th -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-school text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">10th Grade</h3>
+                    <p class="text-gray-600 mb-4">2017 - 2018</p>
+                    <p class="text-gray-600">Strong foundation in mathematics and science with excellent academic performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">Technical Skills</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-8">Programming Languages</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Python</span>
+                                <span class="text-gray-600">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-purple-600 h-3 rounded-full skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Java</span>
+                                <span class="text-gray-600">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-purple-600 h-3 rounded-full skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">JavaScript</span>
+                                <span class="text-gray-600">88%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-purple-600 h-3 rounded-full skill-bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">C++</span>
+                                <span class="text-gray-600">82%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-purple-600 h-3 rounded-full skill-bar" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-8">Technologies & Frameworks</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <i class="fab fa-react text-3xl text-blue-500 mb-2"></i>
+                            <span class="text-gray-700">React.js</span>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <i class="fab fa-node-js text-3xl text-green-600 mb-2"></i>
+                            <span class="text-gray-700">Node.js</span>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <i class="fas fa-database text-3xl text-blue-600 mb-2"></i>
+                            <span class="text-gray-700">MySQL</span>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <i class="fab fa-git-alt text-3xl text-orange-600 mb-2"></i>
+                            <span class="text-gray-700">Git</span>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <i class="fab fa-docker text-3xl text-blue-400 mb-2"></i>
+                            <span class="text-gray-700">Docker</span>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <i class="fas fa-cloud text-3xl text-blue-300 mb-2"></i>
+                            <span class="text-gray-700">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-16">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4bf6d0e2-1fc7-4972-9e92-589801ceda8c.png" alt="Machine learning dashboard showing data visualization and prediction results with clean modern interface" class="w-full h-48 object-cover" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzM3NDE1MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlByb2plY3QgSW1hZ2U8L3RleHQ+PC9zdmc+'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">ML Prediction System</h3>
+                        <p class="text-gray-600 mb-4">Machine learning system for predictive analytics using Python and TensorFlow with real-time dashboard.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="project1.avif" alt="E-commerce platform interface with product listings, shopping cart, and user authentication features" class="w-full h-48 object-cover" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzM3NDE1MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlByb2plY3QgSW1hZ2U8L3RleHQ+PC9zdmc+'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">E-Commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">Full-stack e-commerce solution with user authentication, payment integration, and admin dashboard.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>        
+              
+    <!-- Footer -->
+    <footer>
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+        
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#experience" class="footer-link">Experience</a>
+                <a href="#education" class="footer-link">Education</a>
+                <a href="#projects" class="footer-link">Projects</a>
+                <a href="tel:+91 99077 01559" class="footer-link">Contact</a>
+            </div>
+            
+            <p class="copyright">© 2025 Mansi Jaiswal. All rights reserved.</p>
+        </div>
+    </footer>
+
+ <script src="main.js"></script> 
+</body>
+</html>
